@@ -35,5 +35,5 @@ cacheSolve <- function(x, ...) {
   matrx <- x$get()
   invMa <- solve(matrx, ...)
   x$setmean(invMa)
-  invMa
+  return(invMa)
 }
